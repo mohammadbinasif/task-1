@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DayFlow — Simple Task Manager</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="#" class="logo">DayFlow</a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="primaryNav" class="primary-nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#tasks">Tasks</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <h1>Stay on top of your day.</h1>
+      <p>A simple, distraction-free way to keep track of what needs doing.</p>
+    </section>
+
+    <section id="tasks" class="task-section" aria-labelledby="tasksHeading">
+      <h2 id="tasksHeading">My Tasks</h2>
+
+      <form id="taskForm" class="task-form">
+        <label for="taskInput" class="visually-hidden">Add a new task</label>
+        <input type="text" id="taskInput" placeholder="What do you need to do?" required>
+        <button type="submit">Add</button>
+      </form>
+
+      <p id="emptyMsg" class="empty-msg">No tasks yet — add one above.</p>
+      <ul id="taskList" class="task-list"></ul>
+    </section>
+
+    <section id="about" class="about-section">
+      <h2>About this app</h2>
+      <p>DayFlow was built as a lightweight frontend exercise — plain HTML, CSS and JavaScript, no frameworks. It's designed to work smoothly whether you're on a phone, tablet, or desktop.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 DayFlow. Built for the Full Stack Internship — Project 1.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
